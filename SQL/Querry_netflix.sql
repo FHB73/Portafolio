@@ -12,7 +12,7 @@ ORDER BY número_de_actuaciones DESC
 
 SELECT series.titulo, avg(episodios.rating_imdb) as IMDB
 FROM series, episodios
-Where series.serie_id = episodios.serie_id
+WHERE series.serie_id = episodios.serie_id
 GROUP BY series.serie_id
 ORDER BY IMDB DESC
 
